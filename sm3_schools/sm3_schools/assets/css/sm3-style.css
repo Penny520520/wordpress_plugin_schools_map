@@ -1,0 +1,251 @@
+.sm3-section-container {
+   margin: 0 auto;
+}
+.sm3-section-container h2 {
+   font-family: "Montserrat";
+   font-weight: bold!important;
+   text-align: center;
+   font-size: 48px!important;
+   margin-bottom: 40px!important;
+}
+.sm3-section-container h2 .country-name {
+   color: #FC7D63;
+}
+.is-flex {
+   display: flex;
+}
+.schoolmap-container {
+   align-items: center;
+}
+.sm3-section-container img {
+   width: 100%;
+   /* v3 */
+   max-width: initial!important;
+}
+/* left column country image */
+.sm3-section-container .left-column {
+   padding-right: 40px;
+   position: relative;
+}
+.sm3-section-container .country-img {
+   width: 576px!important;
+   height: auto;
+}
+
+/* school map's bookmarks */
+.sm3-section-container .bookmark {
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   left: 0;
+}
+.sm3-section-container .sch-logo {
+   position: absolute;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   transition: box-shadow .35s, transform .3s ;
+}
+.sm3-section-container .sch-logo:hover {
+   box-shadow: 0 10px 38px rgba(0, 0, 0, 0.16);
+   transform: translateY(-10px);
+}
+.sm3-section-container .line {
+   width: 3px;
+   background-color: #FC7D63;
+   margin: 0 auto;
+}
+.sm3-section-container .bookmark img {
+   height: auto;
+}
+/* click and size change to 200px */
+.sm3-section-container .regular-size{
+   width:50px!important;
+}
+.sm3-section-container .large-size {
+   width: 100px!important;
+}
+/* right column */
+.sm3-section-container .right-column .sch-logo-heading{
+   border-radius: 5px;
+   width: 100px!important;
+   height: auto;
+}
+.sm3-section-container .right-column .heading {
+   align-items: center;
+}
+.sm3-section-container h3 {
+   font-family: "Montserrat";
+   font-weight: bold!important;
+   font-size: 28px!important;
+   padding-left: 20px;
+   color: #1C214C;
+}
+.sm3-section-container p {
+   font-family: "Noto Sans";
+   font-size: 14px;
+   color: #1C214C;
+   width: 100%;
+}
+
+.sm3-section-container .school-largeimg {
+   margin-top: 10px;
+   margin-bottom: 40px;
+   border-radius: 5px;
+   object-fit: cover;
+   width: 100%!important;
+   height: 350px!important;
+   position: relative;
+
+}
+.sm3-section-container .thuimg {
+   object-fit: cover;
+   border-radius: 5px;
+   width: 100px!important;
+   height: 60px!important;
+   border: 2px solid white;
+   transition: border .35s;
+}
+.sm3-section-container .thuimg:first-of-type {
+   border:2px solid black;
+}
+.sm3-section-container .thuimg:hover {
+   border:2px solid black;
+}
+.sm3-section-container .school-largeimg::before {
+   content:"";
+   display: block;
+   position: absolute;
+   background: red;
+   top: -12px;
+   left: 0;
+   width: 100px;
+   height: 100px;
+
+}
+.sm3-section-container .school-thumbnails img {
+   margin-right: 20px;
+}
+
+.sm3-section-container .allSchBtn {
+   font-family: "Noto Sans";
+   padding: 15px 35px;
+   font-size: 14px;
+   margin: 10px 0;
+   display: inline-block;
+   background: rgb(28,33,76);
+   background: linear-gradient(90deg, rgba(28,33,76,1) 75%, rgba(252,125,99,1) 100%);
+   border-radius: 3px;
+   color: white;
+   text-decoration: none;
+   transition: box-shadow .35s, transform .3s ;
+}
+.sm3-section-container .allSchBtn:hover {
+   box-shadow: 0 10px 38px rgba(0, 0, 0, 0.16);
+   transform: translateY(-3px);
+}
+
+.sm3-nav {
+   margin: 40px auto;
+}
+.sm3-section-container .nav-btn {
+   font-family: "Noto Sans";
+   font-weight: 'SemiBold';
+   width: 180px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   font-size: 16px;
+   margin: 10px 0px;
+   margin-right: 15px;
+   display: inline-block;
+   border-radius: 3px;
+   color: #1C214C;
+   border: 1px solid #1C214C;
+   background: transparent;
+   transition: box-shadow .35s, transform .3s ;
+}
+.sm3-section-container .nav-btn.btn-active {
+   background: #1C214C;
+   color: white;
+}
+.sm3-section-container .nav-btn:hover {
+   box-shadow: 0 10px 38px rgba(0, 0, 0, 0.16);
+   transform: translateY(-3px);
+}
+
+/* media query */
+@media (max-width: 1200px) {
+   .sm3-section-container h2 {
+      font-size: 40.8px!important;
+   }
+   .sm3-section-container h3 {
+      font-size: 27.2px!important;
+   }
+   .sm3-section-container .nav-btn { 
+      width: 150px;
+   }
+
+}
+
+@media (max-width: 992px) { 
+   .sm3-section-container h2 {
+      font-size: 38.4px!important;
+   }
+   .sm3-section-container h3 {
+      font-size: 22.6px!important;
+   }
+   .sm3-section-container .schoolmap-container {
+      display: block;
+   }
+   .sm3-section-container .left-column {
+      padding-right: 0px;
+   }
+   .sm3-section-container .school-thumbnails img {
+      margin-right: 10px;
+   }
+}
+
+@media (max-width: 768px) { 
+   .sm3-section-container .left-column {
+      margin-left: 63px;
+      margin-bottom: 20px;
+   }
+
+}
+
+@media (max-width: 576px) { 
+   .sm3-section-container h2 {
+      font-size: 36px!important;
+   }
+   .sm3-section-container h3 {
+      font-size: 22.6px!important;
+   }
+   .sm3-section-container .nav-btn { 
+      width: 110px;
+   }
+   .sm3-section-container .left-column {
+      margin-left: -70px;
+   }
+
+}
+
+@media (max-width: 320px) { 
+   .sm3-section-container h2 {
+      font-size: 32px!important;
+   }
+   .sm3-section-container .left-column {
+      margin-left: 0px;
+   }
+   .sm3-section-container .bookmark {
+      display: none;
+   }
+   .sm3-section-container .right-column {
+      display: none;
+   }
+   .sm3-section-container .country-img {
+      width: 310px!important;
+   }
+   .sm3-nav {
+      text-align: center;
+   }
+
+}

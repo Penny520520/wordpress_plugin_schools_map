@@ -1,0 +1,13 @@
+.test{
+    color:red;
+}
+.is-flex {
+    display: flex;
+}
+.coun-code-field,
+.coun-name-field {
+    width: 200px;
+}
+.tables-container:nth-child(odd) {
+    background: #e8e8e8;
+}
