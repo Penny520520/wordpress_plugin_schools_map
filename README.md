@@ -1,1 +1,1 @@
-# wordpress_plugin_schools_map
+# wordpress_plugin-schools_map
